@@ -1,6 +1,6 @@
 # mbtiles
 
-Node.js utilities and [tilelive](https://github.com/mapbox/tilelive.js) integration for the [MBTiles](http://mbtiles.org) format.
+Node.js utilities and [tilelive](https://github.com/mapbox/tilelive.js) integration for the [MBTiles](https://github.com/mapbox/mbtiles-spec) format.
 
 [![Build Status](https://travis-ci.org/mapbox/node-mbtiles.svg?branch=master)](https://travis-ci.org/mapbox/node-mbtiles)
 [![Build status](https://ci.appveyor.com/api/projects/status/04wbok5rs3eroffe)](https://ci.appveyor.com/project/Mapbox/node-mbtiles)
@@ -29,9 +29,9 @@ new MBTiles('./path/to/file.mbtiles?mode={ro, rw, rwc}', function(err, mbtiles) 
 
 The `mode` query parameter is a opening flag of mbtiles. It is optional, default as `rwc`. Available flags are:
 
-- `ro`: readonly mode, will throw error if the mbtiles is not existed.
-- `rw`: read and write mode, will throw error if the mbtiles is not existed.
-- `rwc`: read, write and create mode, will create a new mbtiles if the mbtiles is not existed.
+- `ro`: readonly mode, will throw error if the mbtiles does not exist.
+- `rw`: read and write mode, will throw error if the mbtiles does not exist.
+- `rwc`: read, write and create mode, will create a new mbtiles if the mbtiles does not exist.
 
 ### Reading
 
